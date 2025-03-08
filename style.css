@@ -144,6 +144,7 @@ body {
   .about {
     grid-template-columns: 1fr;
   }
+  
   .about .item-about {
     padding: 10%;
     display: flex;
