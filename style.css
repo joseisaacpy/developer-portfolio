@@ -210,8 +210,9 @@ body {
   display: flex;
   flex-direction: column;
   padding: 2%;
-  background: url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
-    no-repeat center center / cover fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+      no-repeat center center / cover fixed;
 }
 .techs h2 {
   font-size: clamp(2rem, 4vw, 4rem);
@@ -271,7 +272,7 @@ body {
 .projects {
   padding: 5%;
   grid-area: projects;
-  background: var(--azulEscuro);
+  background: linear-gradient(to bottom, var(--azulEscuro), var(--azulPadrao));
 }
 
 .projects h2 {
@@ -332,7 +333,7 @@ body {
   flex-direction: column;
   gap: 2rem;
   padding: 5%;
-  background-color: var(--azulEscuro);
+  background: linear-gradient(to top, var(--azulEscuro), var(--azulPadrao));
 }
 .contact img {
   width: 100px;
