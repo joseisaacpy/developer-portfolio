@@ -11,15 +11,12 @@
 }
 
 /* animação de quicar */
-@keyframes quicar {
+@keyframes arrowMove {
   0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.4);
+    transform: translateY(0px);
   }
   100% {
-    transform: scale(1);
+    transform: translateY(30px);
   }
 }
 
@@ -112,6 +109,15 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+/* seta com animação da seçao hero */
+.hero::after {
+  position: absolute;
+  content: url(./img/arrow-down-white.svg);
+  bottom: 10%;
+  width: 30px;
+  animation: arrowMove 1s ease-in-out infinite alternate;
 }
 
 /* about */
@@ -243,6 +249,7 @@ body {
 }
 .contact nav ul li a {
   color: var(--bg-white);
+  font-weight: 600;
 }
 
 .contact .social-links {
@@ -253,6 +260,7 @@ body {
 }
 
 .contact .social-links i {
+  color: var(--bg-white);
   cursor: pointer;
   font-size: 2rem;
   transition: all 0.5s ease-in-out;
