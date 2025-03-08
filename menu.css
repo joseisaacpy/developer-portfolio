@@ -1,0 +1,5 @@
+@media (max-width: 900px) {
+  .container-header nav ul {
+    display: none;
+  }
+}
