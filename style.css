@@ -51,6 +51,11 @@ a:hover {
   text-decoration: underline;
 }
 
+/* imagens */
+img {
+  max-width: 100%;
+}
+
 /* html */
 html {
   font-size: 16px;
@@ -96,6 +101,7 @@ body {
 }
 
 .header nav ul li a {
+  font-size: 1.2rem;
   color: #fff;
 }
 
@@ -107,12 +113,30 @@ body {
     url(https://images.pexels.com/photos/747101/pexels-photo-747101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
       no-repeat top center / cover fixed;
   display: flex;
+  gap: 0.5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  text-align: center;
+  padding: 10px;
 }
-
+.hero * {
+  animation: aparicaoSuave 1s ease-in-out;
+}
+/* h1 da secao hero */
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  text-align: center;
+}
+.hero p {
+  font-size: clamp(1rem, 2vw, 2rem);
+  text-align: center;
+}
+.hero strong {
+  color: var(--azulClaro);
+  font-weight: 700;
+}
 /* seta com animação da seçao hero */
 .hero::after {
   position: absolute;
