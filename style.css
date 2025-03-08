@@ -13,9 +13,11 @@
 /* animação de quicar */
 @keyframes arrowMove {
   0% {
+    opacity: 0.8;
     transform: translateY(0px);
   }
   100% {
+    opacity: 0.5;
     transform: translateY(30px);
   }
 }
@@ -78,7 +80,7 @@ body {
 }
 
 .header img {
-  width: 50px;
+  width: 70px;
 }
 
 .container-header {
@@ -148,11 +150,12 @@ body {
 /* paragrafos da secao about */
 .about .item-about p {
   font-size: clamp(1rem, 1.6vw, 1.5rem);
+  line-height: 1.5;
 }
 
 /* imagem da secao about */
 .about .item-about.image img {
-  border: 2px solid var(--azulPadrao);
+  border: 3px solid var(--azulPadrao);
   box-shadow: 1px 1px 15px var(--azulClaro);
   border-radius: 50%;
   max-width: 100%;
@@ -177,14 +180,22 @@ body {
 /* technologies */
 .techs {
   grid-area: techs;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
   background: url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
     no-repeat center center / cover fixed;
+}
+.techs h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  text-align: center;
+}
+.container-techs {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 10%;
   gap: 1rem;
 }
-
 .techs .item-tech {
   display: flex;
   flex-direction: column;
@@ -198,6 +209,7 @@ body {
   transition: all 0.5s ease;
 }
 
+/* imagens das teconologias */
 .techs .item-tech img {
   opacity: 0.6;
   transition: all 0.5s ease-in-out;
@@ -206,25 +218,83 @@ body {
   opacity: 1;
 }
 
+.techs .item-tech p {
+  font-weight: 700;
+}
 /* responsivo */
 
 @media (max-width: 768px) {
   .techs {
+    padding: 5%;
+  }
+  .techs .container-techs {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 425px) {
   .techs {
+    padding: 5%;
+  }
+  .techs .container-techs {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 /* projects */
 .projects {
+  padding: 5%;
   grid-area: projects;
-  background: #000
-    url(https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
-    no-repeat center center / cover fixed;
+  background: var(--azulEscuro);
+}
+
+.projects h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  text-align: center;
+}
+
+.container-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 5%;
+}
+
+@media (max-width: 425px) {
+  .container-projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.container-projects .item-project {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--azulEscuro);
+  box-shadow: 1px 1px 5px var(--azulClaro);
+  transition: all 0.5s ease;
+}
+
+.container-projects .item-project img {
+  max-width: 100%;
+  opacity: 0.6;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.container-projects .item-project img:hover {
+  opacity: 1;
+}
+
+.container-projects .item-project p {
+  font-weight: 700;
+}
+.container-projects .item-project a {
+  color: #fff;
 }
 /* contact */
 .contact {
