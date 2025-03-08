@@ -23,10 +23,12 @@ Este é o meu portfólio pessoal, desenvolvido com HTML e CSS, utilizando concei
 
 ## 📷 Demonstração
 
-*(Adicione aqui prints ou GIFs do seu portfólio em funcionamento)*
+- Versão Desktop:
+  <img src='./img/prints/desktop-portfolio.png'>
+- Versão Mobile:
+  <img src='./img/prints/mobile-portfolio.png'>
 
 ## 📌 Melhorias Futuras
 
-- [ ] Adicionar JavaScript para interações dinâmicas
-- [ ] Melhorias no design e animações
-
+- Adicionar JavaScript para interações dinâmicas
+- Melhorias no design e animações
