@@ -103,8 +103,57 @@ body {
 
 /* about */
 .about {
+  background: var(--azulEscuro);
   grid-area: about;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
 }
+
+/* itens da secao about */
+.about .item-about {
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* h2 da secao about */
+.about .item-about h2 {
+  font-size: clamp(1.5rem, 4vw, 4rem);
+  text-align: center;
+}
+
+/* paragrafos da secao about */
+.about .item-about p {
+  font-size: clamp(1rem, 1.6vw, 1.5rem);
+}
+
+/* imagem da secao about */
+.about .item-about.image img {
+  border: 2px solid var(--azulPadrao);
+  box-shadow: 1px 1px 15px var(--azulClaro);
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about .item-about {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
 /* projects */
 .projects {
   grid-area: projects;
