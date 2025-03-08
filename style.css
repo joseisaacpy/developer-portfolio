@@ -79,9 +79,7 @@ body {
 .header {
   grid-area: header;
   width: 100%;
-  min-height: 80px;
   background-color: var(--azulEscuro);
-  padding: 1.5rem 3rem;
 }
 
 .header img {
@@ -89,6 +87,8 @@ body {
 }
 
 .container-header {
+  padding: 1.5rem 2rem;
+  min-height: 75px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -96,8 +96,12 @@ body {
 
 .header nav ul {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   list-style: none;
+}
+
+.header h1 {
+  color: #fff;
 }
 
 .header nav ul li a {
