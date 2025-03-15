@@ -11,6 +11,8 @@
       href="./img/jose-isaac-logo.png"
       type="image/x-icon"
     />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- header -->
@@ -85,7 +87,7 @@
       <h2>Tecnologias</h2>
       <div class="container-techs">
         <!-- html -->
-        <div class="item-tech">
+        <div class="item-tech" data-aos="fade-up" data-aos-duration="1000">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
             alt="Ícone do HTML5"
@@ -93,7 +95,7 @@
           <p>HTML</p>
         </div>
         <!-- css -->
-        <div class="item-tech">
+        <div class="item-tech" data-aos="fade-up" data-aos-duration="1500">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
             alt="Ícone do CSS3"
@@ -101,7 +103,7 @@
           <p>CSS</p>
         </div>
         <!-- js -->
-        <div class="item-tech">
+        <div class="item-tech" data-aos="fade-up" data-aos-duration="2000">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
             alt="Ícone do JavaScript"
@@ -109,7 +111,7 @@
           <p>JavaScript</p>
         </div>
         <!-- js -->
-        <div class="item-tech">
+        <div class="item-tech" data-aos="fade-up" data-aos-duration="2500">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
             alt="Ícone do Figma"
@@ -123,7 +125,7 @@
       <h2>Projetos</h2>
       <div class="container-projects">
         <!-- project 1 -->
-        <div class="item-project">
+        <div class="item-project" data-aos="flip-up">
           <img src="./img/projeto-api-filmes.png" alt="Imagem do projeto" />
           <h3>Consumindo API de Filmes</h3>
           <p>Projeto que consome uma API de filmes.</p>
@@ -135,7 +137,7 @@
           >
         </div>
         <!-- project 1 -->
-        <div class="item-project">
+        <div class="item-project" data-aos="flip-up">
           <img src="./img/projeto-relogio.png" alt="Imagem do projeto" />
           <h3>Relógio Digital</h3>
           <p>
@@ -150,7 +152,7 @@
           >
         </div>
         <!-- project 1 -->
-        <div class="item-project">
+        <div class="item-project" data-aos="flip-up">
           <img src="./img/projeto-landing-gym.png" alt="Imagem do projeto" />
           <h3>Landing Page para Academia</h3>
           <p>
@@ -165,7 +167,7 @@
           >
         </div>
         <!-- project 1 -->
-        <div class="item-project">
+        <div class="item-project" data-aos="flip-up">
           <img src="./img/projeto-login.png" alt="Imagem do projeto" />
           <h3>Página de Cadastro e Login</h3>
           <p>Página de cadastro e login com design moderno e responsivo.</p>
@@ -209,5 +211,12 @@
       src="https://kit.fontawesome.com/5432a0e64c.js"
       crossorigin="anonymous"
     ></script>
+    <!-- meu javascript -->
+    <script src="./index.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
