@@ -1,7 +1,7 @@
 /* lista de links */
-.header nav ul {
-  display: flex;
-}
+/* .header nav ul {
+  display: none;
+} */
 
 /* ancoras / links */
 .header nav ul li a {
