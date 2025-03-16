@@ -1,11 +1,33 @@
+/* lista de links */
 .header nav ul {
   display: flex;
 }
 
+/* ancoras / links */
 .header nav ul li a {
   font-size: 1.2rem;
   font-weight: 500;
   color: #fff;
+  position: relative;
+}
+.header nav ul li a:hover {
+  text-decoration: none;
+}
+
+/* traço debaixo da ancora */
+.header nav ul li a::after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  right: 0;
+  transition: 0.3s ease-in-out;
+}
+/* o traço debaixo da ancora vai aparecer abaixo */
+.header nav ul li a:hover::after {
+  width: 100%;
 }
 
 .header .menu {
