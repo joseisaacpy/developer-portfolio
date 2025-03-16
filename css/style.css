@@ -1,0 +1,336 @@
+/* fonte poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* variáveis */
+:root {
+  --font1: "Poppins", sans-serif;
+  --bg-black: #000;
+  --bg-white: #fff;
+  --azulPadrao: #00a2ff;
+  --azulEscuro: #064d76;
+  --azulClaro: #2badf8;
+}
+
+/* html */
+html {
+  font-size: 16px;
+}
+
+/* body */
+body {
+  color: #fff;
+  font-size: 1rem;
+  display: grid;
+  grid:
+    "header header header header"
+    "hero hero hero hero"
+    "about about about about"
+    "techs techs techs techs"
+    "projects projects projects projects"
+    "contact contact contact contact";
+}
+
+/* header */
+.header {
+  /* deixa o header fixo */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  grid-area: header;
+  width: 100%;
+  background-color: var(--azulEscuro);
+}
+
+.header img {
+  width: 70px;
+}
+
+.container-header {
+  padding: 1.5rem 2rem;
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.header h1 {
+  color: #fff;
+}
+/* hero */
+.hero {
+  grid-area: hero;
+  height: 90dvh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
+    url(./img/hero-image.jpg) no-repeat top center / cover fixed;
+
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  text-align: center;
+  padding: 10px;
+}
+.hero * {
+  animation: aparicaoSuave 1s ease-in-out;
+}
+/* h1 da secao hero */
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  text-align: center;
+}
+.hero p {
+  font-size: clamp(1rem, 2vw, 2rem);
+  text-align: center;
+}
+.hero strong {
+  color: var(--azulClaro);
+  font-weight: 700;
+}
+/* seta com animação da seçao hero */
+.hero::after {
+  position: absolute;
+  content: url(./img/arrow-down-white.svg);
+  bottom: 10%;
+  width: 30px;
+  animation: arrowMove 1s ease-in-out infinite alternate;
+}
+
+/* about */
+.about {
+  background: var(--azulEscuro);
+  grid-area: about;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+/* itens da secao about */
+.about .item-about {
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* h2 da secao about */
+.about .item-about h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  text-align: center;
+}
+
+/* paragrafos da secao about */
+.about .item-about p {
+  font-size: clamp(1rem, 1.6vw, 1.5rem);
+  line-height: 1.5;
+}
+
+/* imagem da secao about */
+.about .item-about.image img {
+  border: 3px solid var(--azulPadrao);
+  box-shadow: 1px 1px 15px var(--azulClaro);
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about .item-about {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* technologies */
+.techs {
+  grid-area: techs;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+      no-repeat center center / cover fixed;
+}
+.techs h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  text-align: center;
+}
+.container-techs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10%;
+  gap: 1rem;
+}
+.techs .item-tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--azulEscuro);
+  box-shadow: 1px 1px 15px var(--azulClaro);
+  transition: all 0.5s ease;
+}
+
+/* imagens das teconologias */
+.techs .item-tech img {
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out;
+}
+.techs .item-tech img:hover {
+  opacity: 1;
+}
+
+.techs .item-tech p {
+  font-weight: 700;
+}
+/* responsivo */
+
+@media (max-width: 768px) {
+  .techs {
+    padding: 5%;
+  }
+  .techs .container-techs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 425px) {
+  .techs {
+    padding: 5%;
+  }
+  .techs .container-techs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* projects */
+.projects {
+  padding: 5%;
+  grid-area: projects;
+  background: linear-gradient(to bottom, var(--azulEscuro), var(--azulPadrao));
+}
+
+.projects h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  text-align: center;
+}
+
+.container-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 5%;
+}
+
+@media (max-width: 425px) {
+  .container-projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.container-projects .item-project {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--azulEscuro);
+  box-shadow: 1px 1px 5px var(--azulClaro);
+  transition: all 0.5s ease;
+}
+
+.container-projects .item-project img {
+  max-width: 100%;
+  opacity: 0.6;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.container-projects .item-project img:hover {
+  opacity: 1;
+}
+
+.container-projects .item-project p {
+  font-weight: 700;
+}
+.container-projects .item-project a {
+  color: #fff;
+}
+/* contact */
+.contact {
+  grid-area: contact;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5%;
+  background: linear-gradient(to top, var(--azulEscuro), var(--azulPadrao));
+}
+.contact img {
+  width: 100px;
+  box-shadow: 1px 1px 15px var(--azulClaro);
+  border-radius: 50%;
+}
+.contact nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.contact nav ul li a {
+  color: var(--bg-white);
+  font-weight: 600;
+}
+
+.contact .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact .social-links i {
+  color: var(--bg-white);
+  cursor: pointer;
+  font-size: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+.contact .social-links i:hover {
+  color: var(--azulPadrao);
+}
+
+/* scroll */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--azulEscuro);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: var(--azulClaro);
+}
