@@ -99,7 +99,7 @@ body {
 /* seta com animação da seçao hero */
 .hero::after {
   position: absolute;
-  content: url(./img/arrow-down-white.svg);
+  content: url(../img/arrow-down-white.svg);
   bottom: 10%;
   width: 30px;
   animation: arrowMove 1s ease-in-out infinite alternate;
