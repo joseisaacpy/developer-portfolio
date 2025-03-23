@@ -13,7 +13,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
+/* link que há no titulo do cabeçalho */
+.header a:hover {
+  text-decoration: none;
+}
 /* imagens */
 img {
   max-width: 100%;
