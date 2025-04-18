@@ -1,0 +1,41 @@
+/* hero */
+.hero {
+  grid-area: hero;
+  height: 90dvh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url(../img/hero/hero-image.jpg) no-repeat center center / cover fixed;
+
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  text-align: center;
+  padding: 10px;
+}
+.hero * {
+  animation: aparicaoSuave 1s ease-in-out;
+}
+/* h1 da secao hero */
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  text-align: center;
+}
+.hero p {
+  font-size: clamp(1rem, 2vw, 2rem);
+  text-align: center;
+}
+.hero strong {
+  color: var(--azulClaro);
+  font-weight: 700;
+}
+/* seta com animação da seçao hero */
+.hero::after {
+  position: absolute;
+  content: url(../img/arrow-down-white.svg);
+  bottom: 10%;
+  width: 30px;
+  animation: arrowMove 1s ease-in-out infinite alternate;
+}

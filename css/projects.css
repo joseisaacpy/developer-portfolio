@@ -1,0 +1,56 @@
+/* projects */
+.projects {
+  padding: 5%;
+  grid-area: projects;
+  background: linear-gradient(to bottom, var(--azulEscuro), var(--azulPadrao));
+}
+
+.projects h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  text-align: center;
+}
+
+.container-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 5%;
+}
+
+@media (max-width: 425px) {
+  .container-projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.container-projects .item-project {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--azulEscuro);
+  box-shadow: 1px 1px 5px var(--azulClaro);
+  transition: all 0.5s ease;
+}
+
+.container-projects .item-project img {
+  max-width: 100%;
+  opacity: 0.6;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.container-projects .item-project img:hover {
+  opacity: 1;
+}
+
+.container-projects .item-project p {
+  font-weight: 700;
+}
+.container-projects .item-project a {
+  color: #fff;
+}

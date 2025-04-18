@@ -1,0 +1,38 @@
+/* header */
+.header {
+  /* deixa o header fixo */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  grid-area: header;
+  width: 100%;
+  background-color: var(--azulEscuro);
+}
+
+.header img {
+  width: 70px;
+}
+
+/* link que há no titulo do cabeçalho */
+.header a:hover {
+  text-decoration: none;
+}
+
+.container-header {
+  padding: 1.5rem 2rem;
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.header h1 {
+  color: #fff;
+}

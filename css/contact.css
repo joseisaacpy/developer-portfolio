@@ -1,0 +1,42 @@
+/* contact */
+.contact {
+  grid-area: contact;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5%;
+  background: linear-gradient(to top, var(--azulEscuro), var(--azulPadrao));
+}
+.contact img {
+  width: 100px;
+  box-shadow: 1px 1px 15px var(--azulClaro);
+  border-radius: 50%;
+}
+.contact nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.contact nav ul li a {
+  color: var(--bg-white);
+  font-weight: 600;
+}
+
+.contact .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact .social-links i {
+  color: var(--bg-white);
+  cursor: pointer;
+  font-size: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+.contact .social-links i:hover {
+  color: var(--azulPadrao);
+}
