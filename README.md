@@ -17,16 +17,17 @@ Este é o meu portfólio pessoal, desenvolvido com HTML e CSS, utilizando concei
 
 1. Baixe ou clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/joseisaacpy/developer-portfolio.git
    ```
 2. Abra o arquivo `index.html` no seu navegador.
 
 ## 📷 Demonstração
 
-- Versão Desktop:
-  <img src='./img/prints/desktop-portfolio.png'>
-- Versão Mobile:
-  <img src='./img/prints/mobile-portfolio.png'>
+### 💻 Versão Desktop
+<img src="./img/prints/desktop-portfolio.webp" width="600px">
+
+### 📱 Versão Mobile
+<img src="./img/prints/mobile-portfolio.webp" width="300px">
 
 ## 📌 Melhorias Futuras
 
