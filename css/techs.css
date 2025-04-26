@@ -34,10 +34,22 @@
 /* imagens das teconologias */
 .techs .item-tech img {
   opacity: 0.6;
+  filter: grayscale(100%);
   transition: all 0.3s ease-in-out;
 }
+
+/* imagens das tecnologias no mobile */
+@media (max-width: 768px) {
+  .techs .item-tech img {
+    filter: none; /* No mobile, sempre colorido */
+    opacity: 1;
+  }
+}
+
 .techs .item-tech img:hover {
   opacity: 1;
+  filter: grayscale(0%);
+  transform: rotate(3deg) scale(1.05);
 }
 
 .techs .item-tech p {
