@@ -28,13 +28,13 @@
   border-radius: 1rem;
   background-color: var(--azulEscuro);
   box-shadow: 1px 1px 15px var(--azulClaro);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 /* imagens das teconologias */
 .techs .item-tech img {
   opacity: 0.6;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .techs .item-tech img:hover {
   opacity: 1;

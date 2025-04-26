@@ -35,7 +35,7 @@
   color: var(--bg-white);
   cursor: pointer;
   font-size: 2rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .contact .social-links i:hover {
   color: var(--azulPadrao);
