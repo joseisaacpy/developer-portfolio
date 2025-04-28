@@ -5,9 +5,9 @@
   flex-direction: column;
   padding: 2%;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
-    url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
-      no-repeat center center / cover fixed;
+    url(../img/background-techs.webp) no-repeat center center / cover fixed;
 }
+
 .techs h2 {
   font-size: clamp(2rem, 4vw, 4rem);
   text-align: center;
