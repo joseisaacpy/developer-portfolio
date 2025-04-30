@@ -20,13 +20,13 @@ const projetos = [
     repo: "joseisaacpy/best-websites-dev",
     capa: "./img/projects/projeto-links-web.webp",
     descricao: "Coleção de sites úteis para desenvolvedores.",
-    tecnologias: "HTML, CSS, JS",
+    tecnologias: "HTML, CSS, JavaScript",
   },
   {
     nome: "Clone Site Telego",
     link: "https://joseisaacpy.github.io/clone-site-telego/",
     repo: "joseisaacpy/clone-site-telego",
-    capa: "",
+    capa: "./img/projects/projeto-clone-site-telego.webp",
     descricao: "Clonagem de uma landing page para prática de layout.",
     tecnologias: "HTML, CSS",
   },
@@ -34,40 +34,57 @@ const projetos = [
     nome: "Consumo de API GitHub",
     link: "https://joseisaacpy.github.io/consumindo-api-github/",
     repo: "joseisaacpy/consumindo-api-github",
-    capa: "./img/projects/projeto-api-github.png",
+    capa: "./img/projects/projeto-api-github.webp",
     descricao: "Projeto que consome a API do GitHub.",
-    tecnologias: "HTML, CSS, JS",
+    tecnologias: "HTML, CSS, JavaScript",
   },
   {
     nome: "Landing Page Equilíbrio",
     link: "https://joseisaacpy.github.io/landing-page-equilibrio/",
     repo: "joseisaacpy/landing-page-equilibrio",
-    capa: "./projects/projeto-landing-gym.webp",
-    descricao: "Landing page responsiva de tema relaxante.",
-    tecnologias: "HTML, CSS, JS",
+    capa: "./img/projects/projeto-landing-gym.webp",
+    descricao:
+      "Página responsiva com foco em bem-estar, cores escuras e layout moderno.",
+    tecnologias: "HTML, CSS, JavaScript",
   },
   {
     nome: "Landing Page Barbeiro",
     link: "https://joseisaacpy.github.io/lp-igor-barbeiro/",
     repo: "joseisaacpy/lp-igor-barbeiro",
-    capa: "./projects/lp-igor-barbeiro.webp",
+    capa: "./img/projects/projeto-igor-barbeiro.webp",
     descricao: "Página para divulgação de serviços de barbearia.",
-    tecnologias: "HTML, CSS, JS",
+    tecnologias: "HTML, CSS, JavaScript",
   },
   {
     nome: "Gerador de Dicas do Dia",
     link: "https://joseisaacpy.github.io/projeto-dicas-diarias/",
     repo: "joseisaacpy/projeto-dicas-diarias",
-    capa: "./projects/projeto-dicas-diarias.webp",
-    descricao: "Página que exibe dicas diárias e reflexivas.",
-    tecnologias: "HTML, CSS, JavaScript",
-  },
-  {
-    nome: "Página de Links para Web",
-    link: "https://joseisaacpy.github.io/best-websites-dev/",
-    repo: "joseisaacpy/best-websites-dev",
-    capa: "./projects/projeto-links-web.webp",
-    descricao: "Página de links úteis para Desenvolvedores Web.",
+    capa: "./img/projects/projeto-dicas-diarias.webp",
+    descricao:
+      "Descubra dicas diárias inspiradoras para refletir e começar bem o dia!",
     tecnologias: "HTML, CSS, JavaScript",
   },
 ];
+
+// Container dos projetos
+const containerProjects = document.querySelector(".container-projects");
+projetos.forEach((projeto) => {
+  let itemProject = `
+          <div class="item-project" data-aos="flip-up">
+          <img
+            src="${projeto.capa}"
+            alt="Imagem do projeto"
+          />
+          <h3>${projeto.nome}</h3>
+          <p>${projeto.descricao}</p>
+          <p><strong>Tecnologias:</strong> ${projeto.tecnologias}</p>
+          <a
+            href="${projeto.link}"
+            target="_blank"
+            >🔗 Ver Projeto</a
+          >
+        </div>
+`;
+  containerProjects.innerHTML += itemProject;
+});
+// console.log(containerProjects);
