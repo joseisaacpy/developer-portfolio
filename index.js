@@ -68,23 +68,29 @@ const projetos = [
 
 // Container dos projetos
 const containerProjects = document.querySelector(".container-projects");
-projetos.forEach((projeto) => {
-  let itemProject = `
-          <div class="item-project" data-aos="flip-up">
-          <img
-            src="${projeto.capa}"
-            alt="Imagem do projeto"
-          />
-          <h3>${projeto.nome}</h3>
+
+if (containerProjects) {
+  // Variável de auxílio
+  let html = "";
+
+  // Para cada projeto
+  projetos.forEach((projeto) => {
+    html += `
+    <div class="item-project" data-aos="flip-up">
+    <img
+    src="${projeto.capa}"
+    alt="Imagem do projeto ${projeto.nome}"
+    />
+    <h3>${projeto.nome}</h3>
           <p>${projeto.descricao}</p>
           <p><strong>Tecnologias:</strong> ${projeto.tecnologias}</p>
           <a
-            href="${projeto.link}"
-            target="_blank"
-            >🔗 Ver Projeto</a
+          href="${projeto.link}"
+          target="_blank"
+          >🔗 Ver Projeto</a
           >
-        </div>
-`;
-  containerProjects.innerHTML += itemProject;
-});
-// console.log(containerProjects);
+          </div>
+          `;
+    containerProjects.innerHTML = html;
+  });
+}
