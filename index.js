@@ -15,20 +15,21 @@ closeModal.addEventListener("click", () => {
 // Projetos
 const projetos = [
   {
-    nome: "Best Websites Dev",
-    link: "https://joseisaacpy.github.io/best-websites-dev/",
-    repo: "joseisaacpy/best-websites-dev",
-    capa: "./img/projects/projeto-links-web.webp",
-    descricao: "Coleção de sites úteis para desenvolvedores.",
+    nome: "Gerador de Dicas do Dia",
+    link: "https://joseisaacpy.github.io/projeto-dicas-diarias/",
+    repo: "joseisaacpy/projeto-dicas-diarias",
+    capa: "./img/projects/projeto-dicas-diarias.webp",
+    descricao:
+      "Descubra dicas diárias inspiradoras para refletir e começar bem o dia!",
     tecnologias: "HTML, CSS, JavaScript",
   },
   {
-    nome: "Clone Site Telego",
-    link: "https://joseisaacpy.github.io/clone-site-telego/",
-    repo: "joseisaacpy/clone-site-telego",
-    capa: "./img/projects/projeto-clone-site-telego.webp",
-    descricao: "Clonagem de uma landing page para prática de layout.",
-    tecnologias: "HTML, CSS",
+    nome: "Landing Page Barbeiro",
+    link: "https://joseisaacpy.github.io/lp-igor-barbeiro/",
+    repo: "joseisaacpy/lp-igor-barbeiro",
+    capa: "./img/projects/projeto-igor-barbeiro.webp",
+    descricao: "Página para divulgação de serviços de barbearia.",
+    tecnologias: "HTML, CSS, JavaScript",
   },
   {
     nome: "Consumo de API GitHub",
@@ -48,20 +49,20 @@ const projetos = [
     tecnologias: "HTML, CSS, JavaScript",
   },
   {
-    nome: "Landing Page Barbeiro",
-    link: "https://joseisaacpy.github.io/lp-igor-barbeiro/",
-    repo: "joseisaacpy/lp-igor-barbeiro",
-    capa: "./img/projects/projeto-igor-barbeiro.webp",
-    descricao: "Página para divulgação de serviços de barbearia.",
-    tecnologias: "HTML, CSS, JavaScript",
+    nome: "Clone Site Telego",
+    link: "https://joseisaacpy.github.io/clone-site-telego/",
+    repo: "joseisaacpy/clone-site-telego",
+    capa: "./img/projects/projeto-clone-site-telego.webp",
+    descricao: "Clonagem de uma landing page para prática de layout.",
+    tecnologias: "HTML, CSS",
   },
+
   {
-    nome: "Gerador de Dicas do Dia",
-    link: "https://joseisaacpy.github.io/projeto-dicas-diarias/",
-    repo: "joseisaacpy/projeto-dicas-diarias",
-    capa: "./img/projects/projeto-dicas-diarias.webp",
-    descricao:
-      "Descubra dicas diárias inspiradoras para refletir e começar bem o dia!",
+    nome: "Best Websites Dev",
+    link: "https://joseisaacpy.github.io/best-websites-dev/",
+    repo: "joseisaacpy/best-websites-dev",
+    capa: "./img/projects/projeto-links-web.webp",
+    descricao: "Coleção de sites úteis para desenvolvedores.",
     tecnologias: "HTML, CSS, JavaScript",
   },
 ];
