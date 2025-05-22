@@ -40,3 +40,8 @@
 .contact .social-links i:hover {
   color: var(--azulPadrao);
 }
+/* icon de café */
+
+.contact .social-links :last-child i:hover {
+  color: #0f0f0d;
+}
