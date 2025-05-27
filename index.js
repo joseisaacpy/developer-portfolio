@@ -58,11 +58,11 @@ const projetos = [
   },
 
   {
-    nome: "Best Websites Dev",
-    link: "https://joseisaacpy.github.io/best-websites-dev/",
-    repo: "joseisaacpy/best-websites-dev",
+    nome: "Web Tools Organizer",
+    link: "https://joseisaacpy.github.io/webtools-organizer/",
+    repo: "joseisaacpy/webtools-organizer",
     capa: "./img/projects/projeto-links-web.webp",
-    descricao: "Coleção de sites úteis para desenvolvedores.",
+    descricao: "Ferramenta para organização dos sites mais usados para web.",
     tecnologias: "HTML, CSS, JavaScript",
   },
 ];
